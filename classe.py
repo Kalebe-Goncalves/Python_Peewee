@@ -7,11 +7,7 @@ db = SqliteDatabase(arq)
 class BaseModel(Model):
     class Meta:
         database = db
-
-class Especie(BaseModel):
-    nome_especie = CharField()       
-    periodo_poda = CharField()
-
+        
 class Planta(BaseModel):
     nome = CharField()
     nome_cientifico = CharField()
@@ -30,7 +26,6 @@ if os.path.exists(arq):
 
 db.connect()
 db.create_tables([
-    Especie,
     Planta,
     Jardim,
     PlantadoJardim
