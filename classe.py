@@ -31,8 +31,8 @@ db.create_tables([
     PlantadoJardim
 ])
 
-planta1 = Planta.create(nome = "Rosa", nome_cientifico = "FelipiumTestumdum", tamanho_folha = "Médio", especie = "Cannabis", periodo_poda = "120 dias")
-planta2 = Planta.create(nome = "Lirio", nome_cientifico = "AmendoimRosiumPequinium", tamanho_folha = "Pequeno", especie = "folhinha", periodo_poda = "2 meses")
+planta1 = Planta.create(nome = "Rosa", nome_cientifico = "FelipiumTestumdum", tamanho_folha = "Médio")
+planta2 = Planta.create(nome = "Lirio", nome_cientifico = "AmendoimRosiumPequinium", tamanho_folha = "Pequeno")
 jardim_prefeitura = Jardim.create(nome_jardineiro = "Everton", localizacao = "Timbocity")
 
 PlantaPrefeitura = PlantadoJardim.create(jardim = jardim_prefeitura, planta = planta1)
